@@ -202,24 +202,54 @@ body {
 }
 
 .shedow-box{
+    position: absolute;
     border: 1px solid #C3C4C6;
     box-shadow: 8px 12px 64px 0px #A4A4A426;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background: #FFFFFF;
 }
 
+.popup-top{
+    width: 234px;
+    height: 112px;
+    top: 510px;
+    left: 1091px;
+    border-radius: 16px;
+    border-width: 1px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-top{
+    background-image: url('smiley.png');
+    background-repeat: no-repeat;
+}
+
+.number-text{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0%;
+    color: var(--theme-blue);
+}
+
+.popup-bottom-text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 46px;
+    letter-spacing: 0%;
+    color: var(--theme-blue);
+}
+
 .popup-bottom{
-    position: absolute;
-    width: 381.79296875px;
     bottom: 24px;
     left: 575px;
     border-width: 1px;
     border-radius: 16px;
-    padding-top: 28px;
-    padding-left: 20px;
     gap: 12px;
+    justify-content: flex-start;
 }
 
 .auther-wrapper{
@@ -228,6 +258,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
+    padding-left: 20px;
 }
 
 .auther-img{
@@ -260,6 +291,9 @@ body {
     line-height: 26px;
     letter-spacing: 3%;
     color: #1E1E1E;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .auther-name{
@@ -279,7 +313,7 @@ font-size: 14px;
 
 }
 
-.star-img {
+.star-img { 
     width: 72.16px;
     height: auto;
 }
