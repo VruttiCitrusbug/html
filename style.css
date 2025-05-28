@@ -1,14 +1,14 @@
 :root {
-  --font-family: 'DM Sans', sans-serif;
-  --theme-blue: #173B58;
-  --highlight-yellow: #EDB031;
+    --font-family: 'DM Sans', sans-serif;
+    --theme-blue: #173B58;
+    --highlight-yellow: #EDB031;
 }
 
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
 }
 
 .container {
@@ -200,7 +200,6 @@ body {
     font-weight: 500;
     font-size: 24px;
     line-height: 46px;
-    letter-spacing: 0%;
     color: var(--theme-blue);
 }
 
@@ -215,7 +214,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8.5px;
+    gap: 8px;
     padding-left: 20px;
 }
 
@@ -241,13 +240,10 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 341.79296875px;
-    height: 52px;
     opacity: 0.9;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    letter-spacing: 3%;
     color: #1E1E1E;
     padding: 28px 20px 0px 20px;
 }
@@ -258,7 +254,6 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 3%;
 }
 
 .auther-role {
@@ -273,7 +268,7 @@ body {
     height: auto;
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
 
     .container {
         width: 1200px;
@@ -281,22 +276,110 @@ body {
 
     .header-logo img {
         margin-left: 10px;
-        width: 50px;
     }
+
     .signup-button {
         margin-right: 10px;
     }
 
     .banner-text-container {
         margin-left: 10px;
+        gap: 3px;
     }
 
+    .main-text-wrapper {
+        width: 323px;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 50px;
+    }
+    .sub-text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 40px;
+    }
+    .email-input-text {
+        width: 470px;
+        padding-left: 23px;
+    }
+    .email-button {
+        padding: 16px 36px 17px 43px;
+        width: 215px;
+        margin-left: -214px;
+    }
+
+    .signin-text {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 42px;
+    }
     .popup-top {
         width: 190px;
         height: 90px;
+        bottom: 130px;
+        right: 10px;
     }
-    .number-text{
+
+    .number-text {
         font-size: 27px;
         line-height: 27px;
     }
-}
+
+    .popup-bottom {
+        bottom: 10px;
+        right: 360px;
+        gap: 7px;
+        background-image: url('star-bg.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    .sub-logo-button{
+        width: 110px;
+        height: 50px;
+    }
+    .icon-2{
+        width: 56px;
+    }
+    .icon-1{
+        width: 56px;
+    }
+
+    .text-wrapper {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 13px 0px 0px 15px;
+    }
+
+    .auther-wrapper {
+        gap: 6px;
+        padding-left: 16px;
+    }
+
+    .auther-info {
+        padding-bottom: 10px;
+        padding-right: 25px;
+    }
+
+    .auther-name {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: unset;
+    }
+
+    .star-img {
+        display: none;
+    }
+
+    .auther-img {
+        width: 48px;
+        padding-bottom: 10px;
+    }
+
+} */
+
+/* @media only screen and (min-width: 992px) {
+    .container {
+        width: 992px;
+    }
+} */
