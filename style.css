@@ -268,14 +268,19 @@ body {
     height: auto;
 }
 
-/* @media only screen and (min-width: 1200px) {
+@media (max-width: 1200px) {
 
     .container {
-        width: 1200px;
+        width: 1100px;
+    }
+
+    .nav-bar {
+        height: 100px;
     }
 
     .header-logo img {
-        margin-left: 10px;
+        margin-left: 15px;
+        width: 215px;
     }
 
     .signup-button {
@@ -283,7 +288,7 @@ body {
     }
 
     .banner-text-container {
-        margin-left: 10px;
+        margin-left: 15px;
         gap: 3px;
     }
 
@@ -293,15 +298,18 @@ body {
         font-size: 34px;
         line-height: 50px;
     }
+
     .sub-text {
         font-weight: 400;
         font-size: 19px;
         line-height: 40px;
     }
+
     .email-input-text {
         width: 470px;
         padding-left: 23px;
     }
+
     .email-button {
         padding: 16px 36px 17px 43px;
         width: 215px;
@@ -313,6 +321,7 @@ body {
         font-size: 17px;
         line-height: 42px;
     }
+
     .popup-top {
         width: 190px;
         height: 90px;
@@ -334,14 +343,16 @@ body {
         background-position: bottom right;
     }
 
-    .sub-logo-button{
+    .sub-logo-button {
         width: 110px;
         height: 50px;
     }
-    .icon-2{
+
+    .icon-2 {
         width: 56px;
     }
-    .icon-1{
+
+    .icon-1 {
         width: 56px;
     }
 
@@ -376,10 +387,47 @@ body {
         padding-bottom: 10px;
     }
 
-} */
+}
 
-/* @media only screen and (min-width: 992px) {
+@media (max-width: 768px) {
     .container {
-        width: 992px;
+        width: 700px;
     }
-} */
+
+    .signup-button {
+        padding: 13px 27px 15px 31px;
+    }
+
+    .header-logo img {
+        width: 180px;
+    }
+
+    .banner-section-items {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .main-text-wrapper {
+        width: 100%;
+    }
+
+    .banner-img {
+        max-width: 550px;
+    }
+
+    .popup-bottom {
+        right: 300px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header-logo img {
+        width: 264px;
+    }
+
+    .signup-button {
+    padding: 24px 42px;
+    font-size: 25px;
+}
+}
