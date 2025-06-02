@@ -31,6 +31,7 @@ body {
 .banner-section-items {
     justify-content: space-between !important;
     flex-direction: row;
+    gap: 50px;
 }
 
 .container-item {
@@ -257,8 +258,6 @@ body {
 }
 
 .auther-role {
-    width: 216;
-    height: 18;
     opacity: 0.7;
     font-size: 14px;
 }
@@ -279,12 +278,12 @@ body {
     }
 
     .header-logo img {
-        margin-left: 15px;
+        margin-left: 30px;
         width: 215px;
     }
 
     .signup-button {
-        margin-right: 10px;
+        margin-right: 30px;
     }
 
     .banner-text-container {
@@ -389,7 +388,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container {
         width: 700px;
     }
@@ -427,7 +426,118 @@ body {
     }
 
     .signup-button {
-    padding: 24px 42px;
-    font-size: 25px;
-}
+        padding: 20px 38px;
+        font-size: 25px;
+    }
+
+    .banner-right-side-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .banner-img {
+        max-width: 100%;
+    }
+
+    .popup-top {
+        bottom: 353px;
+        right: 75px;
+        width: 250px;
+        height: 105px;
+    }
+
+    .number-text {
+        font-size: 40px;
+    }
+
+    .top-popup-text {
+        font-size: 22px;
+    }
+
+    .popup-bottom {
+        position: unset;
+        width: 90%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .text-wrapper {
+        display: inline;
+        white-space: normal;
+        font-size: 26px;
+        line-height: 29px;
+        padding: 22px 0px 0px 26px;
+    }
+
+    .text-wrapper span {
+        display: inline;
+    }
+
+    .auther-wrapper {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .auther-img {
+        width: 100px;
+        padding-bottom: 0px;
+    }
+
+    .auther-info {
+        width: 100%;
+        gap: 10px;
+        padding-bottom: 22px;
+    }
+
+    .auther-name {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .auther-role {
+        font-size: 25px;
+    }
+
+    .banner-text-container {
+        width: 95%;
+        gap: 12px;
+    }
+
+    .main-text-wrapper {
+        font-size: 38px;
+    }
+
+    .sub-text {
+        font-size: 25px;
+    }
+
+    .input-email {
+        width: 100%;
+    }
+
+    .email-input-text {
+        width: 90%;
+        padding-left: 20px;
+        font-size: 23px;
+        height: 69px;
+    }
+
+    .email-button {
+        font-size: 24px;
+    }
+
+    .signin-text {
+        font-size: 22px;
+    }
+
+    .sub-logo-button {
+        width: 165px;
+        height: 76px;
+    }
+
+    .icon-1, .icon-2 {
+        width: 106px;
+    }
 }
