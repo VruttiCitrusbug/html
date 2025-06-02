@@ -1,11 +1,23 @@
 .classroom-glimpse {
     background-color: #DEDEDE;
     display: flex;
+    justify-content: center;
+}
+
+.classroom-glimpse .central-area {
+    display: inline-block;
+    width: min-content;
+    display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding: 115px 115px 115px 115px;
+    padding: 115px;
     gap: 30px;
+}
+
+.central-area {
+    display: inline-block;
+    width: min-content;
 }
 
 .classroom-glimpse .title-section {
@@ -22,7 +34,7 @@
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 16px;
+    gap: 30px;
 }
 
 .classroom-glimpse .card-course {
@@ -43,6 +55,7 @@
 
 .classroom-glimpse .card-image img {
     width: 100%;
+    border-radius: 6px;
 }
 
 .card-course .title-card {
@@ -50,9 +63,17 @@
     font-size: 18px;
     line-height: 20px;
     color: #173B58;
+    padding: 3px 0px;
 }
 
-.card-course .course-name, .card-course .course-steps, .card-course .course-time {
+.card-course .seperator {
+    border: 1px solid #D9DBE9;
+    margin-top: 10px;
+}
+
+.card-course .course-name,
+.card-course .course-steps,
+.card-course .course-time {
     display: flex;
     flex-direction: row;
     color: #183C59;
@@ -61,6 +82,15 @@
     line-height: 20px;
     letter-spacing: 0px;
     gap: 5px;
+}
+
+.card-course .auther-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 10px;
 }
 
 .card-course .course-details {
@@ -78,11 +108,20 @@
 }
 
 
-.classroom-glimpse .auther-wrapper {
-    padding-left: 0px;
+.classroom-glimpse .auther-container {
+    width: 100%;
 }
 
-.classroom-glimpse .auther-wrapper .auther-img-wrapper {
+.auther-info-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.classroom-glimpse .auther-container .auther-img-wrapper {
     max-width: 40px;
     border-radius: 50%;
     border-radius: 50%;
@@ -92,28 +131,36 @@
     align-items: center;
 }
 
-.classroom-glimpse .auther-wrapper .auther-img-wrapper img {
+.classroom-glimpse .auther-container .auther-img-wrapper img {
     width: 100%;
     object-fit: cover;
 }
 
-.classroom-glimpse .auther-wrapper .auther-info {
+.classroom-glimpse .auther-container .auth-image {
+    border-radius: 6px;
+}
+
+.classroom-glimpse .auther-container .auther-info {
     gap: 0px;
     padding-bottom: 0px;
     width: 100%;
 }
 
-.classroom-glimpse .auther-wrapper .auther-name {
+.classroom-glimpse .auther-container .auther-name {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
     color: #183C59;
 }
 
-.classroom-glimpse .auther-wrapper .auther-role {
+.classroom-glimpse .auther-container .auther-role {
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
+}
+
+.classroom-glimpse .more-options-img {
+    width: 30px;
 }
 
 
@@ -137,4 +184,31 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.classroom-glimpse .text-bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 48px 56px;
+    background-color: #183C59;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.text-bottom-container .text-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-decoration-style: solid;
+
+}
+
+.classroom-glimpse .text-bottom-container .sub-text-containt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
 }
