@@ -1,0 +1,140 @@
+.classroom-glimpse {
+    background-color: #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 115px 115px 115px 115px;
+    gap: 30px;
+}
+
+.classroom-glimpse .title-section {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    color: #173B58;
+}
+
+.classroom-glimpse .content-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.classroom-glimpse .card-course {
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 14px 19px;
+    gap: 10px;
+}
+
+.classroom-glimpse .card-image {
+    max-width: 250px;
+}
+
+.classroom-glimpse .card-image img {
+    width: 100%;
+}
+
+.card-course .title-card {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #173B58;
+}
+
+.card-course .course-name, .card-course .course-steps, .card-course .course-time {
+    display: flex;
+    flex-direction: row;
+    color: #183C59;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    gap: 5px;
+}
+
+.card-course .course-details {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+}
+
+.seperator {
+    width: 100%;
+}
+
+.card-course .course-name img {
+    width: 20px;
+}
+
+
+.classroom-glimpse .auther-wrapper {
+    padding-left: 0px;
+}
+
+.classroom-glimpse .auther-wrapper .auther-img-wrapper {
+    max-width: 40px;
+    border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classroom-glimpse .auther-wrapper .auther-img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.classroom-glimpse .auther-wrapper .auther-info {
+    gap: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+.classroom-glimpse .auther-wrapper .auther-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #183C59;
+}
+
+.classroom-glimpse .auther-wrapper .auther-role {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.classroom-glimpse .video-section {
+    position: relative;
+    width: 877px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.classroom-glimpse .video-section img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+
+.classroom-glimpse .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
