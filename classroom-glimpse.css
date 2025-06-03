@@ -1,13 +1,7 @@
 .classroom-glimpse {
     background-color: #DEDEDE;
     display: flex;
-    justify-content: center;
-}
-
-.classroom-glimpse .central-area {
-    display: inline-block;
-    width: min-content;
-    display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
@@ -15,10 +9,10 @@
     gap: 30px;
 }
 
-.central-area {
+/* .central-area {
     display: inline-block;
     width: min-content;
-}
+} */
 
 .classroom-glimpse .title-section {
     font-weight: 700;
@@ -30,11 +24,11 @@
 
 .classroom-glimpse .content-card {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 30px;
+    width: 100%;
 }
 
 .classroom-glimpse .card-course {
@@ -44,9 +38,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    box-sizing: border-box;
-    padding: 14px 19px;
+    /* box-sizing: border-box; */
+    padding: 0px 19px;
     gap: 10px;
+    height: 400px;
+    width: 288px;
 }
 
 .classroom-glimpse .card-image {
@@ -166,7 +162,7 @@
 
 .classroom-glimpse .video-section {
     position: relative;
-    width: 877px;
+    width: 100%;
     height: 400px;
     overflow: hidden;
 }
