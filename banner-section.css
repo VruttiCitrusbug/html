@@ -439,6 +439,11 @@ body {
 
 
 @media (max-width: 600px) {
+
+    .classroom-glimpse .content-card {
+        padding: 0px 0px !important;
+    }
+
     .header-logo img {
         width: 165px;
     }
@@ -460,12 +465,10 @@ body {
     }
 
     .popup-top {
-
-        bottom: 353px;
-        right: 75px;
-        width: 200px;
-        height: 100px;
-
+        bottom: 244px;
+        right: 15px;
+        width: 157px;
+        height: 81px;
     }
 
     .number-text {
@@ -483,12 +486,14 @@ body {
         gap: 5px;
     }
 
+
+
     .text-wrapper {
         display: inline;
         white-space: normal;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 29px;
-        padding: 17px 0px 0px 22px;
+        padding: 12px 0px 0px 14px;
     }
 
     .text-wrapper span {
@@ -498,11 +503,11 @@ body {
     .auther-wrapper {
         flex-direction: row;
         align-items: center;
-        padding-bottom: 10px;
+        padding-bottom: 12px;
     }
 
     .auther-img {
-        width: 70px;
+        width: 50px;
         padding-bottom: 0px;
     }
 
@@ -516,12 +521,12 @@ body {
     }
 
     .auther-name {
-        font-size: 20px;
+        font-size: 15px;
         width: 100%;
     }
 
     .auther-role {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .banner-text-container {
@@ -530,11 +535,12 @@ body {
     }
 
     .main-text-wrapper {
-        font-size: 32px;
+        font-size: 26px;
+        line-height: 33px;
     }
 
     .sub-text {
-        font-size: 21px;
+        font-size: 16px;
     }
 
     .input-email {
@@ -543,26 +549,29 @@ body {
 
     .email-input-text {
         width: 90%;
-        padding-left: 20px;
-        font-size: 19px;
-        height: 56px;
+        padding-left: 24px;
+        font-size: 16px;
+        height: 46px;
     }
 
     .email-button {
-        font-size: 19px;
+        padding: 5px 21px 6px 20px;
+        width: 151px;
+        margin-left: -148px;
+        font-size: 15px;
     }
 
     .signin-text {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .sub-logo-button {
-        width: 139px;
-        height: 56px;
+        width: 125px;
+        height: 45px;
     }
 
     .icon-1,
     .icon-2 {
-        width: 106px;
+        width: 80px;
     }
 }
