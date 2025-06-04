@@ -1,8 +1,11 @@
-.classroom-glimpse-container {
+.classroom-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.glimpse-container {
     background-color: #F6F8FB;
 }
 
