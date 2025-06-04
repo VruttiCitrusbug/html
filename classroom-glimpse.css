@@ -39,18 +39,26 @@
     width: 100%;
 }
 
-.classroom-glimpse .card-course {
+.classroom-glimpse .card-course-container {
     background: #FFFFFF;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    /* box-sizing: border-box; */
     padding: 0px 19px;
     gap: 10px;
     height: 400px;
     width: 288px;
+}
+
+.classroom-glimpse .card-course {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
 }
 
 .classroom-glimpse .card-image {
@@ -227,8 +235,40 @@
 @media (max-width: 767px) {
     .classroom-glimpse {
         max-width: 700px;
-        padding: 0px 30px;
-        margin: 70px 0px;
+        padding: 0px 10px;
+        margin: 50px 0px;
+    }
+
+    .classroom-glimpse .card-image {
+        width: 100%;
+    }
+
+    .classroom-glimpse .card-course-container {
+        flex-direction: row;
+        width: 100%;
+        gap: 30px;
+        height: fit-content;
+        padding: 20px 5px;
+    }
+
+    .card-course-container .card-image {
+        width: 40%;
+    }
+
+    .classroom-glimpse .card-course {
+        width: 60%;
+        gap: 16px;
+    }
+
+    .classroom-glimpse .content-card {
+        flex-direction: column;
+        gap: 40px;
+        box-sizing: border-box;
+        padding: 0px 16px;
+    }
+
+    .classroom-glimpse .video-section {
+        height: 300px;
     }
 
     .classroom-glimpse .title-section {
@@ -246,9 +286,52 @@
 
 @media (max-width: 600px) {
     .classroom-glimpse {
-        max-width: 400px;
+        width: 100%;
     }
-    .classroom-glimpse .content-card {
+
+    .classroom-glimpse .title-section {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    .classroom-glimpse .card-course-container {
         flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        box-sizing: border-box;
+    }
+
+    .classroom-glimpse .card-course {
+        width: 90%;
+    }
+
+    .card-course-container .card-image {
+        width: 80%;
+    }
+
+    .card-course-container .card-course {
+        height: fit-content;
+    }
+
+    .classroom-glimpse .video-section {
+        height: 250px;
+    }
+
+    .classroom-glimpse .play-btn img {
+        width: 70px;
+    }
+
+    .text-bottom-container .text-title {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .classroom-glimpse .text-bottom-container .sub-text-containt {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .classroom-glimpse .text-bottom-container {
+        padding: 30px 20px;
     }
 }

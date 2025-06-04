@@ -81,16 +81,6 @@ body {
     position: relative;
 }
 
-/* .banner-right-side-container {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background-image: url('homepage_img.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 .banner-img {
     max-width: 870px;
     width: 100%;
@@ -278,10 +268,23 @@ body {
     height: auto;
 }
 
+@media (max-width: 1400px) {
+
+    .popup-top {
+        bottom: 135px;
+        right: 88px;
+    }
+
+    .popup-bottom {
+        bottom: 0px;
+        right: 431px;
+    }
+}
+
 @media (max-width: 1200px) {
 
     .container {
-        width: 1100px;
+        max-width: 1100px;
     }
 
     .nav-bar {
@@ -399,9 +402,9 @@ body {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .container {
-        width: 700px;
+        width: 100%;
     }
 
     .signup-button {
@@ -415,6 +418,10 @@ body {
     .banner-section-items {
         flex-direction: column-reverse;
         gap: 30px;
+    }
+
+    .banner-section-items {
+        margin-bottom: 50px;
     }
 
     .main-text-wrapper {
@@ -433,12 +440,12 @@ body {
 
 @media (max-width: 600px) {
     .header-logo img {
-        width: 264px;
+        width: 165px;
     }
 
     .signup-button {
-        padding: 20px 38px;
-        font-size: 25px;
+        padding: 10px 21px;
+        font-size: 15px;
     }
 
     .banner-right-side-container {
@@ -453,33 +460,35 @@ body {
     }
 
     .popup-top {
+
         bottom: 353px;
         right: 75px;
-        width: 250px;
-        height: 105px;
+        width: 200px;
+        height: 100px;
+
     }
 
     .number-text {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .top-popup-text {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .popup-bottom {
         position: unset;
-        width: 90%;
+        width: 80%;
         justify-content: center;
-        gap: 15px;
+        gap: 5px;
     }
 
     .text-wrapper {
         display: inline;
         white-space: normal;
-        font-size: 26px;
+        font-size: 18px;
         line-height: 29px;
-        padding: 22px 0px 0px 26px;
+        padding: 17px 0px 0px 22px;
     }
 
     .text-wrapper span {
@@ -491,37 +500,41 @@ body {
         align-items: center;
         padding-bottom: 10px;
     }
+
     .auther-img {
-        width: 100px;
+        width: 70px;
         padding-bottom: 0px;
     }
 
     .auther-info {
         width: 100%;
-        gap: 10px;
+        gap: 0px;
         padding-bottom: 22px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-bottom: 0px;
     }
 
     .auther-name {
-        font-size: 30px;
+        font-size: 20px;
         width: 100%;
     }
 
     .auther-role {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .banner-text-container {
         width: 95%;
-        gap: 12px;
+        gap: 5px;
     }
 
     .main-text-wrapper {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .sub-text {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .input-email {
@@ -531,24 +544,25 @@ body {
     .email-input-text {
         width: 90%;
         padding-left: 20px;
-        font-size: 23px;
-        height: 69px;
+        font-size: 19px;
+        height: 56px;
     }
 
     .email-button {
-        font-size: 24px;
+        font-size: 19px;
     }
 
     .signin-text {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .sub-logo-button {
-        width: 165px;
-        height: 76px;
+        width: 139px;
+        height: 56px;
     }
 
-    .icon-1, .icon-2 {
+    .icon-1,
+    .icon-2 {
         width: 106px;
     }
 }
