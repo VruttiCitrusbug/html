@@ -1,0 +1,109 @@
+.header-text-wrapper {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--theme-blue);
+    background-image: url(under-line.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 7px;
+}
+
+.text-container {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    color: var(--theme-blue);
+}
+
+.about-us-container .text-container p {
+    margin: 0px;
+
+}
+
+.text-container .text-container-link {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--theme-blue) !important;
+}
+
+.readmore-link {
+    font-weight: 700;
+}
+
+.founder-card-wrapper {
+    position: relative;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    z-index: 0;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--theme-blue);
+    word-break: break-word;
+}
+
+.founder-card-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(96.05deg, rgba(150, 209, 227, 0.2) 45.21%, rgba(216, 228, 214, 0.2) 96.81%);
+    z-index: -1;
+}
+
+.founder-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.founder-name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    color: var(--theme-blue);
+    margin-bottom: 10px;
+}
+
+.founder-info {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--theme-blue);
+}
+
+.horizontal-line {
+    border: 1px solid #D9DBE9;
+}
+
+.founder-signature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.location-wrapper {
+    background-image: url(location.png);
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    line-height: 26px;
+}
+
+.founder-message {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 37px;
+}
