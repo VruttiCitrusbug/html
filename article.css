@@ -1,0 +1,42 @@
+.article-container {
+    margin-top: 0px;
+    gap: 60px;
+    /* padding: 0px 0px; */
+    color: var(--theme-blue);
+}
+
+.article-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+}
+
+.article-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.viewall-btn {
+    border-radius: 56px;
+    border-width: 1px;
+    padding: 20px 40px;
+    border: 1px solid #173B58;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    box-shadow: 0px 3px 12px 0px #173B584D;
+}
+
+/* .card-image {
+    background-image: url('article-1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     background-size: contain;
+     background-position: center;
+     aspect-ratio: 16 / 9;
+} */
