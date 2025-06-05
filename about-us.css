@@ -107,3 +107,70 @@
     font-size: 16px;
     line-height: 37px;
 }
+
+@media (max-width: 991px) {
+    .header-text-wrapper {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .text-container {
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header-text-wrapper {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .text-container {
+        font-size: 15px;
+        line-height: 32px;
+    }
+
+    .founder-image img {
+        width: 200px;
+    }
+
+    .founder-about-wrapper {
+        gap: 10px;
+    }
+
+    .founder-signature {
+        align-items: flex-start;
+    }
+
+    .founder-name {
+        font-size: 24px;
+        margin-bottom: 3px;
+    }
+
+    .founder-info {
+        font-size: 12px;
+    }
+
+    .social-media {
+        gap: 10px;
+    }
+
+    .social-media img {
+        width: 37px;
+    }
+
+    .founder-message {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .founder-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
