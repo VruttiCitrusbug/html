@@ -1,3 +1,9 @@
-.explore-container.responsive-container {
-    flex-direction: row ;
+.explore-container-wrapper.responsive-container {
+    flex-direction: row;
+    word-wrap: break-word;
+
+}
+
+.explore-text-container {
+   color: var(--theme-blue);
 }
