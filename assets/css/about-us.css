@@ -5,7 +5,7 @@
     line-height: 48px;
     text-align: center;
     color: var(--theme-blue);
-    background-image: url(under-line.png);
+    background-image: url(../images/under-line.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-bottom: 7px;
@@ -63,6 +63,13 @@
     gap: 20px;
 }
 
+.founder-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .founder-name {
     font-weight: 700;
     font-size: 28px;
@@ -95,7 +102,7 @@
 }
 
 .location-wrapper {
-    background-image: url(location.png);
+    background-image: url(../images/location.png);
     background-repeat: no-repeat;
     padding-left: 28px;
     line-height: 26px;
@@ -131,7 +138,7 @@
         line-height: 32px;
     }
 
-    .founder-image img {
+    .founder-image img:second-child {
         width: 200px;
     }
 

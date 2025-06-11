@@ -68,7 +68,7 @@
     height: 200px;
     border-radius: 6px;
     width: 250px;
-    background-image: url('card-img.jpg');
+    background-image: url('../images/card-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -185,7 +185,7 @@
     width: 100%;
     height: 400px;
     overflow: hidden;
-    background: url(video-thumbnail.png);
+    background-image: url('../images/video-thumbnail.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

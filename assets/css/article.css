@@ -1,21 +1,24 @@
 .article-container {
     margin-top: 0px;
-    gap: 60px;
-    /* padding: 0px 0px; */
     color: var(--theme-blue);
 }
 
 .article-card-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 55px;
+    gap: 24px;
+}
+
+.article-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .article-text {
     font-weight: 500;
     font-size: 22px;
     line-height: 32px;
-    letter-spacing: 0%;
     text-align: center;
 }
 
@@ -30,6 +33,7 @@
     letter-spacing: 0px;
     text-align: center;
     box-shadow: 0px 3px 12px 0px #173B584D;
+    cursor: pointer;
 }
 
 /* .card-image {
