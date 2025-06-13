@@ -25,7 +25,7 @@
     width: min-content;
 } */
 
-.classroom-glimpse .title-section {
+.title-section {
     font-weight: 700;
     font-size: 40px;
     line-height: 57px;
@@ -33,7 +33,7 @@
     color: var(--theme-blue);
 }
 
-.classroom-glimpse .content-card {
+.content-card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-.classroom-glimpse .card-course-container {
+.card-course-container {
     background: #FFFFFF;
     border-radius: 8px;
     display: flex;
@@ -52,19 +52,19 @@
     padding: 0px 19px;
     gap: 10px;
     height: 400px;
-    width: 288px;
 }
 
-.classroom-glimpse .card-course {
+.card-course {
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
+    width: 100%;
 }
 
-.classroom-glimpse .card-image {
+.course-card-image {
     height: 200px;
     border-radius: 6px;
     width: 250px;
@@ -124,7 +124,7 @@
 }
 
 
-.classroom-glimpse .auther-container {
+.auther-container {
     width: 100%;
 }
 
@@ -137,7 +137,7 @@
     gap: 10px;
 }
 
-.classroom-glimpse .auther-container .auther-img-wrapper {
+.auther-container .auther-img-wrapper {
     max-width: 40px;
     border-radius: 50%;
     border-radius: 50%;
@@ -147,40 +147,40 @@
     align-items: center;
 }
 
-.classroom-glimpse .auther-container .auther-img-wrapper img {
+.auther-container .auther-img-wrapper img {
     width: 100%;
     object-fit: cover;
 }
 
-.classroom-glimpse .auther-container .auth-image {
+.auther-container .auth-image {
     border-radius: 6px;
 }
 
-.classroom-glimpse .auther-container .auther-info {
+.auther-container .auther-info {
     gap: 0px;
     padding-bottom: 0px;
     width: 100%;
 }
 
-.classroom-glimpse .auther-container .auther-name {
+.auther-container .auther-name {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
     color: #183C59;
 }
 
-.classroom-glimpse .auther-container .auther-role {
+.auther-container .auther-role {
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
 }
 
-.classroom-glimpse .more-options-img {
+.more-options-img {
     width: 30px;
 }
 
 
-.classroom-glimpse .video-section {
+.video-section {
     position: relative;
     width: 100%;
     height: 400px;
@@ -193,14 +193,14 @@
 }
 
 
-.classroom-glimpse .play-btn {
+.play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.classroom-glimpse .text-bottom-container {
+.text-bottom-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -220,7 +220,7 @@
 
 }
 
-.classroom-glimpse .text-bottom-container .sub-text-containt {
+.text-bottom-container .sub-text-containt {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -242,11 +242,11 @@
         margin: 50px 0px;
     }
 
-    .classroom-glimpse .card-image {
+    .course-card-image {
         width: 100%;
     }
 
-    .classroom-glimpse .card-course-container {
+    .card-course-container {
         flex-direction: row;
         width: 100%;
         gap: 30px;
@@ -254,27 +254,27 @@
         padding: 20px 15px;
     }
 
-    .card-course-container .card-image {
+    .course-card-image {
         width: 40%;
     }
 
-    .classroom-glimpse .card-course {
+    .card-course {
         width: 60%;
         gap: 16px;
     }
 
-    .classroom-glimpse .content-card {
+    .content-card {
         flex-direction: column;
         gap: 40px;
         box-sizing: border-box;
         padding: 0px 16px;
     }
 
-    .classroom-glimpse .video-section {
+    .video-section {
         height: 300px;
     }
 
-    .classroom-glimpse .title-section {
+    .title-section {
         font-weight: 600;
         font-size: 37px;
         line-height: 53px;
@@ -292,35 +292,35 @@
         width: 100%;
     }
 
-    .classroom-glimpse .title-section {
+    .title-section {
         font-size: 34px;
         line-height: 50px;
     }
 
-    .classroom-glimpse .card-course-container {
+    .card-course-container {
         flex-direction: column;
         align-items: center;
         gap: 30px;
         box-sizing: border-box;
     }
 
-    .classroom-glimpse .card-course {
+    .card-course {
         width: 90%;
     }
 
-    .card-course-container .card-image {
+    .course-card-image {
         width: 80%;
     }
 
-    .card-course-container .card-course {
+    .card-course {
         height: fit-content;
     }
 
-    .classroom-glimpse .video-section {
+    .video-section {
         height: 250px;
     }
 
-    .classroom-glimpse .play-btn img {
+    .play-btn img {
         width: 70px;
     }
 
@@ -329,12 +329,12 @@
         line-height: 28px;
     }
 
-    .classroom-glimpse .text-bottom-container .sub-text-containt {
+    .text-bottom-container .sub-text-containt {
         font-size: 13px;
         line-height: 20px;
     }
 
-    .classroom-glimpse .text-bottom-container {
+    .text-bottom-container {
         padding: 30px 20px;
     }
 }

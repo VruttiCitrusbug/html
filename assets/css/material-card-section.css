@@ -1,0 +1,61 @@
+.material-section {
+    background-color: #F6F8FB;
+}
+
+.material-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.arrow-icon {
+    position: relative;
+}
+
+img.arrow-down {
+    position: absolute;
+    top: 14px;
+}
+
+
+.material-content-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.material-course-container {
+    flex: 1 1 250px;
+    max-width: 250px;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 14px 14px;
+    gap: 10px;
+    background: #FFFFFF;
+}
+
+.material-image {
+    height: 200px;
+    border-radius: 6px;
+    width: 250px;
+    background-image: url('../images/card-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
