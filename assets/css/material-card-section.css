@@ -50,12 +50,69 @@ img.arrow-down {
     background: #FFFFFF;
 }
 
-.material-image {
+.material-card-image {
     height: 200px;
     border-radius: 6px;
     width: 250px;
-    background-image: url('../images/card-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.card-1 {
+    background-image: url('../images/card-img.jpg');
+
+}
+
+.card-2 {
+    background-image: url('../images/card-img-2.png');
+}
+
+.card-3 {
+    background-image: url('../images/card-img-3.png');
+}
+
+.card-4 {
+    background-image: url('../images/card-img-4.png');
+}
+
+@media (max-width: 767px) {
+    .material-course-container .card-course {
+        width: 100% !important;
+    }
+
+    img.arrow-down {
+        position: absolute;
+        top: 19px;
+        height: 40px;
+    }
+
+    .arrow-image {
+        width: 46px;
+    }
+}
+
+@media (max-width: 600px) {
+    .material-course-container {
+        max-width: 90% !important;
+    }
+
+    .material-card-image {
+        width: auto !important;
+        height: 266px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .left-header-content {
+        gap: 6px;
+    }
+
+     img.arrow-down {
+       top: 13px;
+    }
 }
