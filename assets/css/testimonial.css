@@ -26,7 +26,6 @@
 
 .testomonial-card-wrapper {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 50px;
     width: 100%;
     justify-content: center;
@@ -200,4 +199,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (min-width: 547px) and (max-width: 767px) {
+    .testomonial-card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+
+    .testomonial-card:nth-child(3) {
+        grid-column: 1 / 3;
+        justify-self: center;
+        width: 50%;
+    }
+}
+
+@media (max-width: 547px) {
+    .testomonial-card-wrapper {
+        flex-wrap: wrap;
+    }
 }
