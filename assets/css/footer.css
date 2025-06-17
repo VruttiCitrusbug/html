@@ -110,6 +110,20 @@
 }
 
 @media (max-width: 600px) {
+
+    .footer-title-text {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .topic-title {
+        font-size: 14px;
+    }
+
+    .topic-sub-content li {
+        font-size: 14px;
+    }
+
     .info-footer-section {
         gap: 40px;
     }

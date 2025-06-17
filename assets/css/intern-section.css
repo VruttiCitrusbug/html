@@ -1,13 +1,19 @@
 .intern-content{
     background-color: #F6F8FB;
+    position: relative;
 }
 
 .intern-content-wrapper {
     color: var(--theme-blue);
     flex-direction: row;
-    justify-content: flex-end;
-    margin: 0px;
-    padding: 0px;
+    justify-content: flex-start;
+    /* margin: 0px;
+    padding: 0px; */
+    width: 100%;
+    /* position: relative; */
+}
+.content-wrapper {
+    width: 50%;
 }
 
 .left-content-wrapper{
@@ -23,7 +29,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    
 }
 
 .header-text {
@@ -39,6 +44,14 @@
     padding-bottom: 7px;
 }
 
-.see-btn{
-    
+.image-content {
+    height: 100%;
+    width: 50%;
+}
+
+.image-content img {
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 536px;
 }

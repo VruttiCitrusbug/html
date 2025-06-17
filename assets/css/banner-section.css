@@ -122,6 +122,8 @@ body {
     font-size: 18px;
     line-height: 20px;
     padding-left: 40px;
+    padding-right: 230px;
+    box-sizing: border-box;
 }
 
 .email-button {
@@ -556,6 +558,7 @@ body {
         padding-left: 24px;
         font-size: 16px;
         height: 46px;
+        padding-right: 153px;
     }
 
     .email-button {

@@ -76,6 +76,34 @@ img.arrow-down {
     background-image: url('../images/card-img-4.png');
 }
 
+.material-auther {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.material-auther img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 25px;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    margin-right: -33px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.material-auther img:first-child {
+    margin-left: 0;
+}
+
+.auther-container .material-auther{
+    padding-left: 20px;
+}
+
 @media (max-width: 767px) {
     .material-course-container .card-course {
         width: 100% !important;
@@ -112,7 +140,7 @@ img.arrow-down {
         gap: 6px;
     }
 
-     img.arrow-down {
-       top: 13px;
+    img.arrow-down {
+        top: 13px;
     }
 }
