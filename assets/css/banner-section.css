@@ -432,6 +432,7 @@ body {
 
     .main-text-wrapper {
         width: 100%;
+        background-position: bottom left;
     }
 
     .banner-img {

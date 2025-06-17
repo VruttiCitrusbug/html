@@ -104,6 +104,23 @@ img.arrow-down {
     padding-left: 20px;
 }
 
+.auther-container .material-auther-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.material-auther-info {
+    padding-right: 0px;
+}
+
+.heart-icon {
+    width: 40px;
+}
+
+.auther-name {
+    width: 100%;
+}
+
 @media (max-width: 767px) {
     .material-course-container .card-course {
         width: 100% !important;

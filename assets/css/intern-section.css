@@ -1,57 +1,81 @@
-.intern-content{
-    background-color: #F6F8FB;
-    position: relative;
-}
+    .intern-content {
+        background-color: #F6F8FB;
+        position: relative;
+    }
 
-.intern-content-wrapper {
-    color: var(--theme-blue);
-    flex-direction: row;
-    justify-content: flex-start;
-    /* margin: 0px;
-    padding: 0px; */
-    width: 100%;
-    /* position: relative; */
-}
-.content-wrapper {
-    width: 50%;
-}
+    .intern-content-wrapper {
+        color: var(--theme-blue);
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 30px;
+        width: 100%;
+    }
 
-.left-content-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 90px;
-    padding-top: 30px;
-}
+    .content-wrapper {
+        width: 50%;
+    }
 
-.content-text-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-}
+    .left-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 90px;
+    }
 
-.header-text {
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    color: var(--theme-blue);
-    background-image: url(../images/under-line.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    padding-bottom: 7px;
-}
+    .content-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
 
-.image-content {
-    height: 100%;
-    width: 50%;
-}
+    .header-text {
+        font-family: DM Sans;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: var(--theme-blue);
+        background-image: url(../images/under-line.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        padding-bottom: 7px;
+    }
 
-.image-content img {
-    position: absolute;
-    top: 0px;
-    width: 50%;
-    height: 536px;
+    .image-content {
+        height: 100%;
+        width: 50%;
+    }
+
+    .image-content img {
+        position: absolute;
+        top: 0px;
+        width: 50%;
+        height: inherit;
+    }
+
+@media (max-width: 767px) {
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .intern-content-wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .image-content {
+        width: 100vw;
+    }
+
+    .image-content img {
+        position: relative;
+        width: 100vw;
+    }
+
+    .left-content-wrapper {
+        gap: 40px;
+    }
 }
