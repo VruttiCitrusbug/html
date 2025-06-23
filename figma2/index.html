@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light px-3">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+            </a>
+
+            <!-- Middle: Selector (B) -->
+            <div class="d-none d-lg-flex mx-3">
+                <div class="selector-box">
+                    <img src="https://via.placeholder.com/32" alt="Selector Logo" class="selector-logo">
+                    <div class="selector-text">Selected Text</div>
+                    <img src="https://via.placeholder.com/16" alt="Dropdown" width="16" height="16">
+                </div>
+            </div>
+
+            <!-- Right Side: Circles (A' B' C') -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCircles"
+                aria-controls="navbarCircles" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCircles">
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle-lg"></div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

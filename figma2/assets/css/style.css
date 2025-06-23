@@ -1,0 +1,49 @@
+.navbar {
+    background-color: #F7F9FC;
+}
+
+.logo-img {
+    width: 200px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.selector-box {
+    width: 249px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 8px;
+}
+
+.selector-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.selector-text {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.circle-lg {
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    border-radius: 50%;
+}
