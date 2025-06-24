@@ -12,14 +12,18 @@ body {
     box-sizing: border-box;
 }
 
+.header-section {
+    width: 100% !important;
+    margin: 0px auto !important;
+}
+
 .container {
     max-width: 1800px;
     margin: 0 auto;
 }
 
 .banner-section {
-    display: flex;
-    flex-direction: column;
+    margin-top: 0px !important;
 }
 
 .flex-container {
@@ -55,7 +59,6 @@ body {
 
 .header-logo img {
     width: 240px;
-    margin-left: 96px;
 }
 
 .header-options {
@@ -73,7 +76,6 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    margin-right: 96px;
     box-shadow: 0px 3px 12px 0px #173B584D;
 }
 
@@ -107,7 +109,6 @@ body {
     flex-direction: column;
     gap: 16px;
     color: var(--theme-blue);
-    margin-left: 96px;
 }
 
 .input-email {
@@ -298,16 +299,10 @@ body {
     }
 
     .header-logo img {
-        margin-left: 30px;
         width: 215px;
     }
 
-    .signup-button {
-        margin-right: 30px;
-    }
-
     .banner-text-container {
-        margin-left: 15px;
         gap: 3px;
     }
 
@@ -582,4 +577,4 @@ body {
     .icon-2 {
         width: 80px;
     }
-}
+}   
