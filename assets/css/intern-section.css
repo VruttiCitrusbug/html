@@ -52,6 +52,8 @@
     top: 0px;
     width: 50%;
     height: inherit;
+    object-fit: cover;
+    object-position: left;
 }
 
 @media (max-width: 767px) {

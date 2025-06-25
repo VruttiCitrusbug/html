@@ -24,6 +24,7 @@ body {
 
 .banner-section {
     margin-top: 0px !important;
+    width: 100% !important;
 }
 
 .flex-container {
