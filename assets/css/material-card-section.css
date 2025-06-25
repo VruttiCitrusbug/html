@@ -1,3 +1,8 @@
+.material-container {
+    color: var(--theme-blue);
+    width: 100%;
+}
+
 .material-section {
     background-color: #F6F8FB;
 }
@@ -6,6 +11,8 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header-content {
@@ -30,17 +37,28 @@ img.arrow-down {
     top: 14px;
 }
 
+.arrow-btn {
+    cursor: pointer;
+}
+
+.material-content-card-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+
 
 .material-content-card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 30px;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .material-course-container {
-    flex: 1 1 250px;
+    flex: 0 0 250px;
     max-width: 250px;
     min-width: 200px;
     border-radius: 8px;
@@ -51,29 +69,20 @@ img.arrow-down {
 }
 
 .material-card-image {
-    height: 200px;
-    border-radius: 6px;
-    width: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 200px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative; /* ensures inner absolute image doesn't overflow */
 }
 
-.card-1 {
-    background-image: url('../images/card-img.jpg');
-
-}
-
-.card-2 {
-    background-image: url('../images/card-img-2.png');
-}
-
-.card-3 {
-    background-image: url('../images/card-img-3.png');
-}
-
-.card-4 {
-    background-image: url('../images/card-img-4.png');
+.material-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .material-auther {
@@ -100,11 +109,11 @@ img.arrow-down {
     margin-left: 0;
 }
 
-.auther-container .material-auther{
+.auther-container .material-auther {
     padding-left: 20px;
 }
 
-.auther-container .material-auther-info{
+.auther-container .material-auther-info {
     display: flex;
     flex-direction: column;
 }
@@ -121,43 +130,22 @@ img.arrow-down {
     width: 100%;
 }
 
-@media (max-width: 767px) {
-    .material-course-container .card-course {
-        width: 100% !important;
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
     }
-
-    img.arrow-down {
-        position: absolute;
-        top: 19px;
-        height: 40px;
-    }
-
-    .arrow-image {
-        width: 46px;
+    .arrow-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
-@media (max-width: 600px) {
-    .material-course-container {
-        max-width: 90% !important;
-    }
-
-    .material-card-image {
-        width: auto !important;
-        height: 266px;
-    }
-
-    .header-content {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .left-header-content {
-        gap: 6px;
-    }
-
-    img.arrow-down {
-        top: 13px;
+@media (max-width: 476px) {
+    .arrow-icon image {
+        width: 70px;
     }
 }
