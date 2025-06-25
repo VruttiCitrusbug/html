@@ -10,6 +10,7 @@ body {
     padding: 0;
     font-family: var(--font-family);
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .header-section {
@@ -427,6 +428,19 @@ body {
     .banner-section-items {
         flex-direction: column-reverse;
         gap: 30px;
+        align-items: flex-start;
+    }
+
+   .banner-text-container {
+    width: 100%;
+   } 
+
+    .banner-right-side-container {
+        width: 100%;
+    }
+
+    .email-input-text {
+        width: 100%;
     }
 
     .banner-section-items {
@@ -540,7 +554,6 @@ body {
     }
 
     .banner-text-container {
-        width: 95%;
         gap: 5px;
     }
 

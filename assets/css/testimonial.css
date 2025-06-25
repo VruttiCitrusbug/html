@@ -215,7 +215,7 @@
     cursor: pointer;
 }
 
-@media (min-width: 547px) and (max-width: 767px) {
+@media (min-width: 547px) and (max-width: 768px) {
     .testomonial-card-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
