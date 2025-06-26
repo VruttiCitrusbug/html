@@ -4,47 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Navbar</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light px-3">
-        <div class="container-fluid">
+    <nav class="container-fluid navbar-home">
+        <div class="row gx-3 align-items-center">
+            <div class="col-auto">
+                <img src="assets/images/logo.png" alt="Main Logo" class="main-logo">
+            </div>
 
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="Logo" class="logo-img">
-            </a>
+            <div class="col-auto">
+                <div class="dropdown nav-dropdown">
+                    <div class="custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/m-logo.png" alt="Logo" class="select-logo">
+                        <span class="selected-text">Main Street Tower - USA</span>
+                        <img src="assets/images/down-arrow.png" alt="v" class="chevron-down">
+                    </div>
 
-            <!-- Middle: Selector (B) -->
-            <div class="d-none d-lg-flex mx-3">
-                <div class="selector-box">
-                    <img src="https://via.placeholder.com/32" alt="Selector Logo" class="selector-logo">
-                    <div class="selector-text">Selected Text</div>
-                    <img src="https://via.placeholder.com/16" alt="Dropdown" width="16" height="16">
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="assets/images/m-logo.png" alt=""> One
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="assets/images/m-logo.png" alt=""> Two
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="assets/images/m-logo.png" alt=""> Three
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Right Side: Circles (A' B' C') -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCircles"
-                aria-controls="navbarCircles" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="col"></div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCircles">
-                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle-lg"></div>
+            <div class="col-auto d-flex nav-icons">
+                <div>
+                    <img src="assets/images/question.png" alt="Question">
+                </div>
+
+                <div class="notification-icon">
+                    <img src="assets/images/notification.png" alt="Notification">
+                    <div class="notification-badge"></div>
+                </div>
+                <div class="avatar-circle" id="avatar" data-bs-toggle="popover" data-bs-placement="bottom"
+                    data-bs-html="true" data-bs-content="">
+                    AB
                 </div>
             </div>
-
         </div>
     </nav>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverContent = `
+      <div class="popover-option">
+        <img src="assets/images/Profile.png" alt="Icon1">
+        <span>My Account</span>
+      </div>
+      <div class="popover-option">
+        <img src="assets/images/organization.png" alt="Icon2">
+        <span>My Organization</span>
+      </div>
+      <div class="popover-option">
+        <img src="assets/images/BELL.png" alt="Icon3">
+        <span>Notifications</span>
+      </div>
+      <div class="popover-option">
+        <img src="assets/images/logout.png" alt="Icon4">
+        <span>Log Out</span>
+      </div>
+    `;
+
+        const popoverTrigger = document.getElementById('avatar');
+        new bootstrap.Popover(popoverTrigger, {
+            content: popoverContent,
+            html: true,
+            placement: 'bottom',
+            trigger: 'click'
+        });
+    </script>
 </body>
 
 </html>
