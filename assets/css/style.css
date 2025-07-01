@@ -1,3 +1,8 @@
+body {
+    color: #576473;
+    /* font-family: 'Inter', sans-serif; */
+}
+
 .container-fluid {
     padding: 6px 24px;
     box-sizing: border-box;
@@ -84,21 +89,23 @@ nav.navbar-home {
 }
 
 .left-menu {
-    width: 15%;
+    width: 20%;
     height: 100%;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
+    gap: 24px;
+    flex-direction: column;
     border: 1px solid #000;
 }
 
 .main-content-wrapper {
-    width: 85%;
+    width: 80%;
     height: 100%;
     border: 1px solid #000;
 }
 
-.new-booking-btn{
+.new-booking-btn {
     background-color: #0B907B;
     color: #fff;
     box-sizing: border-box;
@@ -107,4 +114,31 @@ nav.navbar-home {
     border: none;
     cursor: pointer;
     width: 100%;
+}
+
+.menu-buttons {
+    background-color: #EFF3F6;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.menu-items {
+    margin: 16px 0px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
 }
