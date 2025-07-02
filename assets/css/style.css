@@ -1,10 +1,13 @@
 body {
-    color: #576473;
-    /* font-family: 'Inter', sans-serif; */
+    color: hsl(212, 14%, 40%);
+    font-family: Inter;
+    padding: 0px !important;
+    margin: 0px !important;
+
 }
 
 .container-fluid {
-    padding: 6px 24px;
+    padding: 8px 24px;
     box-sizing: border-box;
     max-width: 1900px;
 }
@@ -33,6 +36,10 @@ nav.navbar-home {
     height: 20px;
 }
 
+.logo-wrapper {
+    padding-right: 0px;
+}
+
 .avatar-circle {
     width: 40px;
     height: 40px;
@@ -51,7 +58,12 @@ nav.navbar-home {
     padding: 16px 8px !important;
     border-radius: 8px;
     min-width: 200px;
-    transform: translate(967px, 53px);
+    transform: translateY(-10px);
+}
+
+.popover-option img {
+    width: 20px;
+    height: 20px;
 }
 
 .popover-body {
@@ -62,7 +74,7 @@ nav.navbar-home {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
+    padding: 8px 8px;
     cursor: pointer;
     transition: background-color 0.2s;
 }
@@ -86,21 +98,35 @@ nav.navbar-home {
     align-items: center;
     justify-content: center;
     margin: auto;
+    background-color: #f7f9fc;
+}
+
+.custom-dropdown {
+    cursor: pointer;
+}
+
+.drop-down-wrapper {
+    padding-left: 0px;
 }
 
 .left-menu {
-    width: 20%;
+    display: flex;
+    width: max-content;
     height: 100%;
     padding: 8px 24px;
-    justify-content: center;
     align-items: center;
     gap: 24px;
     flex-direction: column;
     border: 1px solid #000;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    vertical-align: middle;
 }
 
 .main-content-wrapper {
-    width: 80%;
+    width: 100%;
     height: 100%;
     border: 1px solid #000;
 }
@@ -113,7 +139,7 @@ nav.navbar-home {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 95%;
 }
 
 .menu-buttons {
@@ -141,4 +167,93 @@ nav.navbar-home {
     align-items: center;
     gap: 16px;
     cursor: pointer;
+}
+
+.collapse-container {
+    margin: 16px 0px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.left-menu.collapsed .new-booking-btn span,
+.left-menu.collapsed .menu-items span,
+.left-menu.collapsed .item span,
+.left-menu.collapsed .collapse-container span {
+    display: none;
+}
+
+.left-menu.collapsed .new-booking-btn {
+    justify-content: center;
+    padding: 8px;
+}
+
+.left-menu.collapsed .menu-items,
+.left-menu.collapsed .item,
+.left-menu.collapsed .collapse-container {
+    justify-content: center;
+}
+
+.collapse-icon {
+    transition: transform 0.3s ease;
+}
+
+.left-menu.collapsed .collapse-icon {
+    transform: rotate(180deg);
+}
+
+
+.banner-section-container {
+    background-image: url('../images/banner-image.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    background-color: #f7f9fc;
+    border: 1px solid #000;
+    color: #fff;
+    gap: 44px;
+}
+
+.m-logo img {
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+}
+
+.welcome-text {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.site-name {
+    /* font-family: Poppins; */
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
 }

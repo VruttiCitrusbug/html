@@ -12,11 +12,11 @@
 <body>
     <nav class="container-fluid navbar-home">
         <div class="row gx-3 align-items-center">
-            <div class="col-auto">
+            <div class="col-auto logo-wrapper">
                 <img src="assets/images/logo.png" alt="Main Logo" class="main-logo">
             </div>
 
-            <div class="col-auto">
+            <div class="col-auto drop-down-wrapper">
                 <div class="dropdown nav-dropdown">
                     <div class="custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="assets/images/m-logo.png" alt="Logo" class="select-logo">
@@ -66,7 +66,8 @@
         <div class="left-menu">
             <button class="new-booking-btn">
                 <img src="assets/images/plus-icon.png" alt="New Booking">
-                New Booking</button>
+                <span>New Booking</span>
+            </button>
 
             <div class="menu-content">
                 <div class="menu-list">
@@ -98,11 +99,24 @@
                     </div>
                 </div>
             </div>
-
+            <div class="collapse-container">
+                <img class="collapse-icon" src="assets/images/collapse.png">
+                <span>Collapse</span>
+            </div>
         </div>
 
         <div class="main-content-wrapper">
-
+            <div class="banner-section-container">
+                <div class="m-logo">
+                    <img src="assets/images/image-banner.png" alt="Notification">
+                </div>
+                <div class="banner-text">
+                    <span class="welcome-text">Welcome To</span>
+                    <span class="site-name">Main Street Tower</span>
+                </div>
+            </div>
+            <div class="info-section">
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -132,6 +146,13 @@
             html: true,
             placement: 'bottom',
             trigger: 'click'
+        });
+
+        const collapseBtn = document.querySelector('.collapse-container');
+        const leftMenu = document.querySelector('.left-menu');
+
+        collapseBtn.addEventListener('click', () => {
+            leftMenu.classList.toggle('collapsed');
         });
     </script>
 </body>
