@@ -40,6 +40,27 @@ nav.navbar-home {
     padding-right: 0px;
 }
 
+.notification-icon {
+    position: relative;
+}
+
+.notification-badge {
+    height: 16px;
+    width: 16px;
+    background-color: #CA2867;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: -3px;
+    left: 11px;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .avatar-circle {
     width: 40px;
     height: 40px;
@@ -256,4 +277,55 @@ nav.navbar-home {
     line-height: 32px;
     letter-spacing: 0.5px;
     vertical-align: middle;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 8px;
+    background-color: #f7f9fc;
+    border-bottom: 2px solid #EFF3F6;
+    color: #232D38;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    vertical-align: middle;
+    gap: 64px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    justify-content: center;
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    justify-content: center
+}
+
+
+.site-contacts-container {
+    display: flex;
+    padding: 24px;
+}
+
+.head-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #232D38;
 }
