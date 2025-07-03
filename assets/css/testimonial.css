@@ -36,7 +36,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 350px;
     padding: 40px 35px;
     border: 1px solid #DEDEDE;
     border-radius: 5px;

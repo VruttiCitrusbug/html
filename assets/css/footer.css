@@ -108,10 +108,19 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0px 20px;
+    }
     .info-footer-section {
         width: 100%;
         flex-wrap: wrap;
+    }
+    .topic-sub-content {
+        font-size: 16px;
+    }
+    .copy-right {
+        padding: 0px 20px;
     }
 }
 
