@@ -11,9 +11,26 @@
 
 <body>
     <nav class="container-fluid navbar-home">
-        <div class="row gx-3 align-items-center">
+        <div class="row gx-3 align-items-center flex-nowrap">
             <div class="col-auto logo-wrapper">
+                <button class="navbar-toggler d-md-none ms-2" type="button" id="menuToggle">
+                    <!-- Hamburger Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B" viewBox="0 0 16 16"
+                        class="bi bi-list hamburger-icon">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+
+
+                    <!-- Cross Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B"
+                        class="bi bi-x close-icon" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
                 <img src="assets/images/logo.png" alt="Main Logo" class="main-logo">
+
             </div>
 
             <div class="col-auto drop-down-wrapper">
@@ -64,36 +81,38 @@
     </nav>
     <div class="content-container">
         <div class="left-menu">
-            <button class="new-booking-btn">
-                <img src="assets/images/plus-icon.png" alt="New Booking">
-                <span>New Booking</span>
-            </button>
+            <div class="top-wrapper">
+                <button class="new-booking-btn">
+                    <img src="assets/images/plus-icon.png" alt="New Booking">
+                    <span>New Booking</span>
+                </button>
 
-            <div class="menu-content">
-                <div class="menu-list">
-                    <div class="menu-items">
-                        <img src="assets/images/booking.png" alt="Home">
-                        <span>Booking List</span>
-                    </div>
-                    <div class="menu-items">
-                        <img src="assets/images/Calandar.png" alt="Home">
-                        <span>Calendar</span>
-                    </div>
-                    <div class="menu-items">
-                        <img src="assets/images/user_management.png" alt="Home">
-                        <span>User Management</span>
-                    </div>
-                    <div class="menu-items">
-                        <img src="assets/images/Configure.png" alt="Home">
-                        <span>Project Management</span>
-                    </div>
-                    <div class="menu-items">
-                        <img src="assets/images/Earth.png" alt="Home">
-                        <span>Site Details</span>
-                    </div>
-                    <div class="menu-items">
-                        <img src="assets/images/Time.png" alt="Home">
-                        <span>Availability</span>
+                <div class="menu-content">
+                    <div class="menu-list">
+                        <div class="menu-items">
+                            <img src="assets/images/booking.png" alt="Home">
+                            <span>Booking List</span>
+                        </div>
+                        <div class="menu-items">
+                            <img src="assets/images/Calandar.png" alt="Home">
+                            <span>Calendar</span>
+                        </div>
+                        <div class="menu-items">
+                            <img src="assets/images/user_management.png" alt="Home">
+                            <span>User Management</span>
+                        </div>
+                        <div class="menu-items">
+                            <img src="assets/images/Configure.png" alt="Home">
+                            <span>Project Management</span>
+                        </div>
+                        <div class="menu-items">
+                            <img src="assets/images/Earth.png" alt="Home">
+                            <span>Site Details</span>
+                        </div>
+                        <div class="menu-items">
+                            <img src="assets/images/Time.png" alt="Home">
+                            <span>Availability</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,12 +226,23 @@
             trigger: 'click'
         });
 
-        const collapseBtn = document.querySelector('.collapse-container');
+        const collapseBtn = document.querySelector('.collapse-icon');
         const leftMenu = document.querySelector('.left-menu');
 
         collapseBtn.addEventListener('click', () => {
             leftMenu.classList.toggle('collapsed');
         });
+
+        const toggleBtn = document.getElementById('menuToggle');
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const closeIcon = document.querySelector('.close-icon');
+        toggleBtn.addEventListener('click', () => {
+            leftMenu.classList.toggle('show-on-mobile');
+            const isOpen = leftMenu.classList.contains('show-on-mobile');
+            hamburgerIcon.style.display = isOpen ? 'none' : 'block';
+            closeIcon.style.display = isOpen ? 'block' : 'none';
+        });
+
     </script>
 </body>
 
