@@ -12,58 +12,54 @@
 <body>
     <nav class="container-fluid navbar-home">
         <div class="row gx-3 align-items-center flex-nowrap">
-            <div class="col-auto logo-wrapper">
-                <button class="navbar-toggler d-md-none ms-2" type="button" id="menuToggle">
-                    <!-- Hamburger Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B" viewBox="0 0 16 16"
-                        class="bi bi-list hamburger-icon">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
+            <div class="col-auto logo-wrapper d-flex align-items-center left-header-items">
+                <div class="col-auto logo-wrapper">
+                    <button class="navbar-toggler d-md-none ms-2" type="button" id="menuToggle">
+                        <!-- Hamburger Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B"
+                            viewBox="0 0 16 16" class="bi bi-list hamburger-icon">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
 
+                        <!-- Cross Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B"
+                            class="bi bi-x close-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <img src="assets/images/Lockup.png" alt="Main Logo" class="main-logo">
+                </div>
+                <div class="col-auto drop-down-wrapper">
+                    <div class="dropdown nav-dropdown">
+                        <div class="custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/m-logo.png" alt="Logo" class="select-logo">
+                            <span class="selected-text">Main Street Tower - USA</span>
+                            <img src="assets/images/down-arrow.png" alt="v" class="chevron-down">
+                        </div>
 
-                    <!-- Cross Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B"
-                        class="bi bi-x close-icon" viewBox="0 0 16 16">
-                        <path
-                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                    </svg>
-                </button>
-                <img src="assets/images/logo.png" alt="Main Logo" class="main-logo">
-
-            </div>
-
-            <div class="col-auto drop-down-wrapper">
-                <div class="dropdown nav-dropdown">
-                    <div class="custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/images/m-logo.png" alt="Logo" class="select-logo">
-                        <span class="selected-text">Main Street Tower - USA</span>
-                        <img src="assets/images/down-arrow.png" alt="v" class="chevron-down">
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/m-logo.png" alt=""> One
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/m-logo.png" alt=""> Two
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/m-logo.png" alt=""> Three
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <img src="assets/images/m-logo.png" alt=""> One
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <img src="assets/images/m-logo.png" alt=""> Two
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <img src="assets/images/m-logo.png" alt=""> Three
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
-
-            <div class="col"></div>
-
-            <div class="col-auto d-flex nav-icons">
+            <div class="col-auto d-flex nav-icons ms-auto">
                 <div>
                     <img src="assets/images/question.png" alt="Question">
                 </div>
@@ -86,6 +82,33 @@
                     <img src="assets/images/plus-icon.png" alt="New Booking">
                     <span>New Booking</span>
                 </button>
+
+                <div class="drop-down-wrapper mobile-drop-down">
+                    <div class="dropdown nav-dropdown">
+                        <div class="custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="selected-text">Main Street Tower - USA</span>
+                            <img src="assets/images/down-arrow.png" alt="v" class="chevron-down">
+                        </div>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/m-logo.png" alt=""> One
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/m-logo.png" alt=""> Two
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/m-logo.png" alt=""> Three
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="menu-content">
                     <div class="menu-list">
@@ -236,6 +259,7 @@
         const toggleBtn = document.getElementById('menuToggle');
         const hamburgerIcon = document.querySelector('.hamburger-icon');
         const closeIcon = document.querySelector('.close-icon');
+        closeIcon.style.display = 'none';
         toggleBtn.addEventListener('click', () => {
             leftMenu.classList.toggle('show-on-mobile');
             const isOpen = leftMenu.classList.contains('show-on-mobile');
