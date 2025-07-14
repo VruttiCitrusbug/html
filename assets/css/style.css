@@ -165,6 +165,7 @@ nav.navbar-home {
     background-color: #fff;
     box-shadow: 0px 8px 12px 0px #141F2B0A;
     border-radius: 6px;
+    overflow: hidden;
 }
 
 
@@ -355,6 +356,11 @@ nav.navbar-home {
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-bottom: 1rem; 
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -455,6 +461,9 @@ nav.navbar-home {
         align-items: flex-start;
         justify-content: flex-start;
     }
+    .scroll-container{
+        padding-bottom: 4rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -479,7 +488,7 @@ nav.navbar-home {
     }
 
     .navbar-toggler {
-        display: block;
+        display: block !important;
     }
 
     .logo-wrapper {

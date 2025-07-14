@@ -260,6 +260,7 @@
         const hamburgerIcon = document.querySelector('.hamburger-icon');
         const closeIcon = document.querySelector('.close-icon');
         closeIcon.style.display = 'none';
+        hamburgerIcon.style.display = 'block';
         toggleBtn.addEventListener('click', () => {
             leftMenu.classList.toggle('show-on-mobile');
             const isOpen = leftMenu.classList.contains('show-on-mobile');
