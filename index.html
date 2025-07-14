@@ -10,239 +10,83 @@
 </head>
 
 <body>
-    <nav class="container-fluid navbar-home">
-        <div class="row gx-3 align-items-center flex-nowrap">
-            <div class="col-auto logo-wrapper">
-                <button class="navbar-toggler d-md-none ms-2" type="button" id="menuToggle">
-                    <!-- Hamburger Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B" viewBox="0 0 16 16"
-                        class="bi bi-list hamburger-icon">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-
-
-                    <!-- Cross Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0B907B"
-                        class="bi bi-x close-icon" viewBox="0 0 16 16">
-                        <path
-                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                    </svg>
-                </button>
-                <img src="assets/images/logo.png" alt="Main Logo" class="main-logo">
-
-            </div>
-
-            <div class="col-auto drop-down-wrapper">
-                <div class="dropdown nav-dropdown">
-                    <div class="custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/images/m-logo.png" alt="Logo" class="select-logo">
-                        <span class="selected-text">Main Street Tower - USA</span>
-                        <img src="assets/images/down-arrow.png" alt="v" class="chevron-down">
-                    </div>
-
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <img src="assets/images/m-logo.png" alt=""> One
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <img src="assets/images/m-logo.png" alt=""> Two
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <img src="assets/images/m-logo.png" alt=""> Three
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col"></div>
-
-            <div class="col-auto d-flex nav-icons">
-                <div>
-                    <img src="assets/images/question.png" alt="Question">
-                </div>
-
-                <div class="notification-icon">
-                    <img src="assets/images/notification.png" alt="Notification">
-                    <div class="notification-badge">2</div>
-                </div>
-                <div class="avatar-circle" id="avatar" data-bs-toggle="popover" data-bs-placement="bottom"
-                    data-bs-html="true" data-bs-content="">
-                    AB
+    <nav class="main-container navbar">
+        <div class="left-header">
+            <a href="#" class="menu-item"><img src="assets/images/Logo.png" alt="logo"></a>
+            <div class="submenu-header">
+                <p class="sub-menu-item">
+                    Radical Focus
+                </p>
+                <div class="sub-menu-icon">
+                    <img src="assets/images/menu-icon.png" alt="">
                 </div>
             </div>
         </div>
     </nav>
-    <div class="content-container">
-        <div class="left-menu">
-            <div class="top-wrapper">
-                <button class="new-booking-btn">
-                    <img src="assets/images/plus-icon.png" alt="New Booking">
-                    <span>New Booking</span>
-                </button>
-
-                <div class="menu-content">
-                    <div class="menu-list">
-                        <div class="menu-items">
-                            <img src="assets/images/booking.png" alt="Home">
-                            <span>Booking List</span>
-                        </div>
-                        <div class="menu-items">
-                            <img src="assets/images/Calandar.png" alt="Home">
-                            <span>Calendar</span>
-                        </div>
-                        <div class="menu-items">
-                            <img src="assets/images/user_management.png" alt="Home">
-                            <span>User Management</span>
-                        </div>
-                        <div class="menu-items">
-                            <img src="assets/images/Configure.png" alt="Home">
-                            <span>Project Management</span>
-                        </div>
-                        <div class="menu-items">
-                            <img src="assets/images/Earth.png" alt="Home">
-                            <span>Site Details</span>
-                        </div>
-                        <div class="menu-items">
-                            <img src="assets/images/Time.png" alt="Home">
-                            <span>Availability</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="collapse-container">
-                <img class="collapse-icon" src="assets/images/collapse.png">
-                <span>Collapse</span>
-            </div>
-        </div>
-
-        <div class="main-content-wrapper">
-            <div class="banner-section-container">
-                <div class="m-logo">
-                    <img src="assets/images/image-banner.png" alt="Notification">
-                </div>
-                <div class="banner-text">
-                    <span class="welcome-text">Welcome To</span>
-                    <span class="site-name">Main Street Tower</span>
-                </div>
-            </div>
-            <div class="info-section">
-                <div class="info-item">
-                    <img src="assets/images/Location.png" alt="">
-                    <div class="location-text">
-                        <span>555 Main St.</span>
-                        <span>Township, CA 90001</span>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <img src="assets/images/Time-black.png" alt="">
-                    <span>7am - 5pm (PDT)</span>
-                </div>
-                <div class="info-item">
-                    <img src="assets/images/Calandar-black.png" alt="">
-                    <span>Monday - Friday</span>
-                </div>
-            </div>
-            <div class="site-contacts-container">
-                <span class="head-text">Site Contacts</span>
-                <div class="scroll-container">
-                    <div class="card-container">
-                        <div class="card-wrapper">
-                            <div class="title-wrapper">
-                                <span class="card-title">General Foreman</span>
-                                <span class="name-text">Tony Doe</span>
-                            </div>
-                            <span class="phone-number">(510) 577-9987</span>
-                            <span class="email-address">azeezhabeebomobolaji@gmail.com</span>
-                        </div>
-                        <div class="card-wrapper">
-                            <span class="card-title">General Foreman</span>
-                            <span class="name-text">Tony Doe</span>
-                            <span class="phone-number">(510) 577-9987</span>
-                            <span class="email-address">azeezhabeebomobolaji@gmail.com</span>
-                        </div>
-                        <div class="card-wrapper">
-                            <span class="card-title">General Foreman</span>
-                            <span class="name-text">Tony Doe</span>
-                            <span class="phone-number">(510) 577-9987</span>
-                            <span class="email-address">azeezhabeebomobolaji@gmail.com</span>
-                        </div>
-                        <div class="card-wrapper">
-                            <span class="card-title">General Foreman</span>
-                            <span class="name-text">Tony Doe</span>
-                            <span class="phone-number">(510) 577-9987</span>
-                            <span class="email-address">azeezhabeebomobolaji@gmail.com</span>
-                        </div>
-                        <div class="card-wrapper">
-                            <span class="card-title">General Foreman</span>
-                            <span class="name-text">Tony Doe</span>
-                            <span class="phone-number">(510) 577-9987</span>
-                            <span class="email-address">azeezhabeebomobolaji@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="site-card-info">
-                        <p>This is where you can add in information to help your users manage their deliveries better.
-                        </p>
-                        <p>Site access times 9am - 5pm</p>
-                        <p>Only open on working days (Monday - Friday)</p>
-                        <p>Please make a delivery by selecting 'Schedule a Delivery' from the menu</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="main-container">
+        <ul class="main-menu-items">
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+            <li class="main-menu-item">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.99058 7.02967C2.39652 8.22579 2.0625 9.57389 2.0625 11C2.0625 12.2084 2.3023 13.3607 2.73691 14.4121L6.59593 9.86977C6.63124 9.81656 6.67291 9.76733 6.72033 9.72335L8.19968 7.98208L2.99058 7.02967ZM3.918 5.54729L9.83845 6.62976C9.86442 6.63322 9.89027 6.63794 9.91592 6.64393L12.2149 7.06427L10.4338 2.08014C7.78245 2.24588 5.44447 3.56764 3.918 5.54729ZM12.1808 2.13981L15.0169 10.0762L18.4404 6.04654C17.0448 3.95444 14.7903 2.48423 12.1808 2.13981ZM19.2631 7.58795L15.4041 12.1302C15.3688 12.1834 15.3271 12.2327 15.2797 12.2766L13.8003 14.0179L19.0094 14.9703C19.6035 13.7742 19.9375 12.4261 19.9375 11C19.9375 9.79164 19.6977 8.63929 19.2631 7.58795ZM18.082 16.4527L12.1616 15.3702C12.1356 15.3668 12.1097 15.3621 12.0841 15.3561L9.78508 14.9357L11.5662 19.9199C14.2175 19.7541 16.5555 18.4324 18.082 16.4527ZM9.81921 19.8602L6.98313 11.9238L3.55963 15.9535C4.95523 18.0456 7.20973 19.5158 9.81921 19.8602ZM8.19784 10.494L9.15349 13.1683L11.9547 13.6805L13.8022 11.506L12.8465 8.83168L10.0453 8.31952L8.19784 10.494ZM0.4375 11C0.4375 5.16649 5.16649 0.4375 11 0.4375C16.8335 0.4375 21.5625 5.16649 21.5625 11C21.5625 16.8335 16.8335 21.5625 11 21.5625C5.16649 21.5625 0.4375 16.8335 0.4375 11Z" />
+                    </svg></a>
+            </li>
+        </ul>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const popoverContent = `
-      <div class="popover-option">
-        <img src="assets/images/Profile.png" alt="Icon1">
-        <span>My Account</span>
-      </div>
-      <div class="popover-option">
-        <img src="assets/images/organization.png" alt="Icon2">
-        <span>My Organization</span>
-      </div>
-      <div class="popover-option">
-        <img src="assets/images/BELL.png" alt="Icon3">
-        <span>Notifications</span>
-      </div>
-      <div class="popover-option">
-        <img src="assets/images/logout.png" alt="Icon4">
-        <span>Log Out</span>
-      </div>
-    `;
-
-        const popoverTrigger = document.getElementById('avatar');
-        new bootstrap.Popover(popoverTrigger, {
-            content: popoverContent,
-            html: true,
-            placement: 'bottom',
-            trigger: 'click'
-        });
-
-        const collapseBtn = document.querySelector('.collapse-icon');
-        const leftMenu = document.querySelector('.left-menu');
-
-        collapseBtn.addEventListener('click', () => {
-            leftMenu.classList.toggle('collapsed');
-        });
-
-        const toggleBtn = document.getElementById('menuToggle');
-        const hamburgerIcon = document.querySelector('.hamburger-icon');
-        const closeIcon = document.querySelector('.close-icon');
-        toggleBtn.addEventListener('click', () => {
-            leftMenu.classList.toggle('show-on-mobile');
-            const isOpen = leftMenu.classList.contains('show-on-mobile');
-            hamburgerIcon.style.display = isOpen ? 'none' : 'block';
-            closeIcon.style.display = isOpen ? 'block' : 'none';
-        });
-
+        document.querySelector('.sub-menu-icon').addEventListener('click', () => {
+            document.querySelector('.submenu-header').classList.toggle('nav-closed-header');
+        })
     </script>
 </body>
 
