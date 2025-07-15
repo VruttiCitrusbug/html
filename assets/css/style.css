@@ -57,8 +57,7 @@ body {
     align-items: center;
     justify-content: space-between;
     min-width: unset;
-        background-color: #F7F7FC;
-
+    background-color: #F7F7FC;
 }
 
 .nav-closed-header .sub-menu-icon {
@@ -71,6 +70,11 @@ body {
     display: none;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: row;
+}
+
 ul.main-menu-items {
     list-style-type: none;
     padding: 0px !important;
@@ -81,7 +85,7 @@ ul.main-menu-items {
 }
 
 li.main-menu-item {
-    padding: 16px !important;
+    padding: 19px !important;
     margin: 0px !important;
 }
 
@@ -90,4 +94,97 @@ li.main-menu-item svg {
     height: 26px;
     cursor: pointer;
     fill: #ABABC2;
+}
+
+.sidebar-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 280px;
+    gap: 200px;
+    height: calc(100dvh - 65px);
+    padding: 24px;
+}
+
+.upper-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.list-title {
+    color: #ABABC2;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 9px;
+    width: 100%;
+}
+
+.item-list .items {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+    color: #585874;
+    padding: 9px 0px;
+}
+
+.item-list .items:hover {
+    color: #3030D3;
+    cursor: pointer;
+}
+
+.add-button {
+    display: flex;
+    color: #3030D3;
+    border: none;
+    padding: 9px 43px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    align-items: center;
+    gap: 6px;
+    background-color: #EBEBFE;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.add-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.down-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 0px;
+    gap: 16px;
+}
+
+.text-section span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #1A1A33;
 }
