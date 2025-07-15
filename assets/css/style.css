@@ -353,18 +353,9 @@ nav.navbar-home {
     gap: 16px;
     width: 100%;
     max-height: calc(100dvh - 494px);
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    overflow-y: scroll;
+    scrollbar-width: thin;
     padding-bottom: 1rem; 
-}
-
-.scroll-container::-webkit-scrollbar {
-    display: none;
-}
-
-.scroll-container::-webkit-scrollbar {
-    display: none;
 }
 
 .card-container {
@@ -544,6 +535,7 @@ nav.navbar-home {
     .scroll-container {
         max-height: unset;
         overflow: scroll;
+        padding-bottom: 0px;
     }
 
     .content-container {
