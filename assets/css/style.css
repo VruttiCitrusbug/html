@@ -87,6 +87,7 @@ ul.main-menu-items {
 li.main-menu-item {
     padding: 19px !important;
     margin: 0px !important;
+    border-radius: 20px;
 }
 
 li.main-menu-item svg {
@@ -180,6 +181,14 @@ li.main-menu-item svg {
     gap: 16px;
 }
 
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
 .text-section span {
     font-weight: 600;
     font-size: 14px;
@@ -187,4 +196,21 @@ li.main-menu-item svg {
     letter-spacing: 0%;
     text-align: center;
     color: #1A1A33;
+}
+
+.text-section p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.closed-sidebar {
+    display: none;
+}
+
+.active-menu-item {
+    background-color: #3030D3;
+    color: #fff;
 }

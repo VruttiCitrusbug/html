@@ -109,6 +109,14 @@
     <script>
         document.querySelector('.sub-menu-icon').addEventListener('click', () => {
             document.querySelector('.submenu-header').classList.toggle('nav-closed-header');
+            document.querySelector('.sidebar-content').classList.toggle('closed-sidebar');
+
+        })
+
+        document.querySelector('.main-menu-item').addEventListener('click', () => {
+            document.querySelector('.submenu-header').classList.toggle('nav-closed-header');
+            document.querySelector('.sidebar-content').classList.toggle('closed-sidebar');
+            document.querySelector('.main-menu-item').classList.toggle('active');
         })
     </script>
 </body>
