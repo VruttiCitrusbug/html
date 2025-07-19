@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Expandable Table</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/card.css">
+</head>
+
+<body>
+
+    <div class="main-card-content-wrapper">
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Objective Type</th>
+                        <th>Division</th>
+                        <th>Responsible</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr class="main-row">
+                        <td class="objective-type">
+                            <!-- <i class="fas fa-chevron-right expand-icon" data-target="details-1"></i> -->
+                            <img src="assets/images/CaretUp.png" data-target="details-1" class="expand-icon">
+                            <button class="btn-objective">Company</button>
+                        </td>
+                        <td class="role-data">CEO</td>
+                        <td class="responsible-data">
+                            <div class="dropdown-data">
+                                <div class="circle-image-data">
+                                    <img src="assets/images/profile.jpg" alt="">
+                                </div>
+                                <img class="click-icon" src="assets/images/CaretDown.png" alt="">
+                            </div>
+                        </td>
+                        <td class="description-data">
+                            <div class="data-description">
+                                By 2030 we want to be the leader in XXX with only newly launched product line
+                            </div>
+                        </td>
+                        <td class="description-data">
+                            <div class="data-description">
+                                21.10.2029
+                            </div>
+                        </td>
+                        <td class="progress-data">
+                            <div class="progress-container">
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" id="progressBar"></div>
+                                </div>
+
+                                <div class="percentage-data">25</div>
+                                <span>%</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="expandable-row" id="details-1">
+                        <td colspan="6">
+                            <div class="exapnd-content">
+                                <span class="exapnd-title">Objective is achieved when</span>
+                                <div class="list-expand">
+     
+                                    <li>We have companyX as client</li>
+                                </div>
+                                <!-- <ul>
+                                    <li>We have companyX as client</li>
+                                    <li>We are larger than competitorY</li>
+                                    <li>We have grown more than 30% in revenue</li>
+                                </ul> -->
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2 -->
+                    <tr class="main-row">
+                        <td>
+                            <i class="fas fa-chevron-right expand-icon" data-target="details-2"></i>
+                        </td>
+                        <td>Gaming Mechanical Keyboard</td>
+                        <td>Accessories</td>
+                        <td>$129.99</td>
+                        <td>23</td>
+                        <td><span class="badge bg-warning">Low Stock</span></td>
+                    </tr>
+                    <tr class="expandable-row" id="details-2">
+                        <td colspan="6">
+                            <div class="expandable-content">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h6>Product Information</h6>
+                                        <p><strong>Model:</strong> GMK-RGB-87</p>
+                                        <p><strong>Switch Type:</strong> Cherry MX Blue</p>
+                                        <p><strong>Features:</strong> RGB backlighting, anti-ghosting, programmable
+                                            keys, aluminum frame</p>
+                                        <p><strong>Compatibility:</strong> Windows, Mac, Linux</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sales Info</h6>
+                                        <p><strong>Monthly Sales:</strong> 156 units</p>
+                                        <p><strong>Rating:</strong> 4.8/5 stars</p>
+                                        <p><strong>Reviews:</strong> 892 customer reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr class="main-row">
+                        <td>
+                            <i class="fas fa-chevron-right expand-icon" data-target="details-3"></i>
+                        </td>
+                        <td>4K Webcam with Auto Focus</td>
+                        <td>Electronics</td>
+                        <td>$199.99</td>
+                        <td>0</td>
+                        <td><span class="badge bg-danger">Out of Stock</span></td>
+                    </tr>
+                    <tr class="expandable-row" id="details-3">
+                        <td colspan="6">
+                            <div class="expandable-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h6>Product Overview</h6>
+                                        <p><strong>Resolution:</strong> 4K Ultra HD (3840x2160)</p>
+                                        <p><strong>Features:</strong> Auto-focus, built-in microphone, privacy shutter,
+                                            plug-and-play USB connectivity</p>
+                                        <p><strong>Use Cases:</strong> Video conferencing, streaming, content creation,
+                                            online meetings</p>
+                                        <p><strong>System Requirements:</strong> USB 3.0 port, Windows 10+, macOS 10.14+
+                                        </p>
+                                        <div class="alert alert-info mt-3">
+                                            <strong>Restock Notice:</strong> Expected back in stock by next Friday.
+                                            Pre-orders available with 10% discount.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+                    <tr class="main-row">
+                        <td>
+                            <i class="fas fa-chevron-right expand-icon" data-target="details-4"></i>
+                        </td>
+                        <td>Portable SSD Drive</td>
+                        <td>Storage</td>
+                        <td>$79.99</td>
+                        <td>67</td>
+                        <td><span class="badge bg-success">Available</span></td>
+                    </tr>
+                    <tr class="expandable-row" id="details-4">
+                        <td colspan="6">
+                            <div class="expandable-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Storage Specifications</h6>
+                                        <p><strong>Capacity:</strong> 500GB</p>
+                                        <p><strong>Interface:</strong> USB 3.2 Gen 2</p>
+                                        <p><strong>Read Speed:</strong> Up to 1,050 MB/s</p>
+                                        <p><strong>Write Speed:</strong> Up to 1,000 MB/s</p>
+                                        <p><strong>Dimensions:</strong> 85 x 57 x 8.2 mm</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>Additional Features</h6>
+                                        <p><strong>Encryption:</strong> 256-bit AES hardware encryption</p>
+                                        <p><strong>Durability:</strong> Shock-resistant up to 1,500G</p>
+                                        <p><strong>Operating Temperature:</strong> 0°C to 70°C</p>
+                                        <p><strong>Included Software:</strong> Backup and security management tools</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const expandIcons = document.querySelectorAll('.expand-icon');
+
+            expandIcons.forEach(icon => {
+                icon.addEventListener('click', function (e) {
+                    e.stopPropagation(); // Prevent row click
+
+                    const targetId = this.getAttribute('data-target');
+                    const targetRow = document.getElementById(targetId);
+                    const isExpanded = targetRow.style.display === 'table-row';
+
+                    if (isExpanded) {
+                        // Collapse
+                        targetRow.style.display = 'none';
+                        this.classList.remove('rotated');
+                    } else {
+                        // Expand
+                        targetRow.style.display = 'table-row';
+                        this.classList.add('rotated');
+                        targetRow.classList.add('fade-in');
+
+                        // Remove animation class after animation completes
+                        setTimeout(() => {
+                            targetRow.classList.remove('fade-in');
+                        }, 300);
+                    }
+                });
+            });
+
+            // Prevent row expansion when clicking on the main row (except arrow)
+            const mainRows = document.querySelectorAll('.main-row');
+            mainRows.forEach(row => {
+                row.addEventListener('click', function (e) {
+                    // Only prevent default behavior, don't expand
+                    if (!e.target.classList.contains('expand-icon')) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

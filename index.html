@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/card.css">
 </head>
 
 <body>
@@ -22,10 +23,21 @@
                 </div>
             </div>
         </div>
+        <div class="right-header">
+            <img class="click-icon" src="assets/images/PaperPlaneTilt.png" alt="">
+            <img class="click-icon" src="assets/images/Bell.png" alt="">
+            <div class="profile-section">
+                <div class="circle-image">
+                    <img src="assets/images/profile.jpg" alt="">
+                </div>
+                <span class="profile-name">Matilda Stone</span>
+                <img class="click-icon" src="assets/images/CaretDown.png" alt="">
+            </div>
+        </div>
     </nav>
     <div class="main-container section-container">
         <ul class="main-menu-items">
-            <li class="main-menu-item">
+            <li class="main-menu-item active">
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
                         fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -105,18 +117,82 @@
                 </div>
             </div>
         </div>
+        <div class="main-content-wrapper">
+            <div class="header-content">
+                <h1 class="header-title">My Radical Focus</h1>
+                <button class="setting-button">
+                    <img src="assets/images/GearSix.png" alt="">
+                    <span>Radical Focus Settings</span>
+                </button>
+            </div>
+            <div class="nav-content">
+                <ul>
+                    <li class="content-items active-content">
+                        <a href="#">Objectives</a>
+                    </li>
+                    <li class="content-items">
+                        <a href="#">Priorities</a>
+                    </li>
+                    <li class="content-items">
+                        <a href="#">KPIs</a>
+                    </li>
+                    <li class="content-items">
+                        <a href="#">Initiatives</a>
+                    </li>
+                    <li class="content-items">
+                        <a href="#">Recurring Activities</a>
+                    </li>
+                    <li class="content-items">
+                        <a href="#">Management Meetings</a>
+                    </li>
+                    <li class="content-items">
+                        <a href="#">Processes</a>
+                    </li>
+                    <li class="content-items">
+                        <a href="#">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <div class="card-header">
+                    <div class="card-header-text">
+                        Objectives
+                    </div>
+                    <div class="card-button-wrapper">
+                        <div class="button-container">
+                            <span class="selection-text">
+                                Year:
+                            </span>
+                            <div class="button-wrapper">
+                                <button class="active-button">2022</button>
+                                <button>2023</button>
+                                <button>2024</button>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <span class="selection-text">Select Type(s):</span>
+                            <div class="button-wrapper">
+                                <button class="active-button">Company</button>
+                                <button class="active-button">Division</button>
+                                <button class="active-button">Individual</button>
+                            </div>
+                        </div>
+                        <button class="objectives">
+                            <img src="assets/images/Plus.png" alt="">
+                            <span>Add Objective</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="main-card-content-wrapper">
+                    
+                </div>
+            </div>
+        </div>
     </div>
     <script>
         document.querySelector('.sub-menu-icon').addEventListener('click', () => {
             document.querySelector('.submenu-header').classList.toggle('nav-closed-header');
             document.querySelector('.sidebar-content').classList.toggle('closed-sidebar');
-
-        })
-
-        document.querySelector('.main-menu-item').addEventListener('click', () => {
-            document.querySelector('.submenu-header').classList.toggle('nav-closed-header');
-            document.querySelector('.sidebar-content').classList.toggle('closed-sidebar');
-            document.querySelector('.main-menu-item').classList.toggle('active');
         })
     </script>
 </body>
