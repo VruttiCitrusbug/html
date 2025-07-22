@@ -19,6 +19,7 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
     color: #6c757d;
+    transform: rotate(90deg);
 }
 
 .expand-icon:hover {
@@ -26,7 +27,7 @@ body {
 }
 
 .expand-icon.rotated {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
 
 .expandable-row {
@@ -224,4 +225,59 @@ body {
 
 .list-expand {
     padding: 12px;
+}
+
+.list-expand {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list-expand-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #585874;
+}
+
+.list-expand-item ul {
+    margin: 0px;
+    padding: 5px 10px;
+    border: 1px solid #EBEBF5;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.list-expand-item .trash-img {
+    cursor: pointer;
+    padding: 11px 16px;
+}
+
+.add-condition-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 4px;
+    background-color: #EBEBFE;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #3030D3;
+    cursor: pointer;
+    width: max-content;
+}
+
+.add-condition-btn img {
+    width: 14px;
+    height: 14px;
+}
+
+    
+.btn-wrapper {
+    padding: 4px 12px 12px 0px;
 }
