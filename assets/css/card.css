@@ -9,6 +9,7 @@ body {
 .main-row {
     border-radius: 8px !important;
     color: #585874;
+    background-color: #F7F7FC;
 }
 
 .main-card-content-wrapper {
@@ -20,6 +21,11 @@ body {
     transition: transform 0.3s ease;
     color: #6c757d;
     transform: rotate(90deg);
+}
+
+.expand-icon img {
+    width: 18px;
+    height: 18px;
 }
 
 .expand-icon:hover {
@@ -46,13 +52,14 @@ body {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
-    cursor: default;
-    background-color: #F7F7FC;
-}
-
-.table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-color-type: none;
     --bs-table-bg-type: none;
+}
+
+.table {
+    --bs-table-bg: unset !important;
+    border-spacing: 0 4px;
+    border-collapse: separate;
 }
 
 .fade-in {
